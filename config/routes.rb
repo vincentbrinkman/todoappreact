@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
-  root 'todos#index'
+  get 'todos/index'
+
+  get 'todos/show'
+
+  get 'todos/create'
+
   resources :todos
 end
